@@ -3,103 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gaurav Kumar — Frontend Developer and aspiring Full Stack Developer from Uttarakhand, India. Explore projects, skills and experience.">
-  <meta name="theme-color" content="#080910">
-  <title>Gaurav Kumar — Developer Portfolio</title>
+  <meta name="description" content="Gaurav Kumar — BCA student and aspiring full-stack developer. Explore projects, skills and experience.">
+  <meta name="theme-color" content="#080b16">
+  <title>Gaurav Kumar | Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="preloader" id="preloader"><div class="loader-mark">GK<span>.</span></div><div class="loader-line"><i></i></div><p>BUILDING DIGITAL EXPERIENCES</p></div>
+  <div class="progress" id="progress"></div>
   <div class="cursor-glow" id="cursorGlow"></div>
-  <header class="site-header" id="top">
-    <a class="brand" href="#home" aria-label="Gaurav Kumar home">GK<span>.</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span></span><span></span></button>
+  <div class="noise"></div>
+  <header class="header" id="header">
+    <a class="brand" href="#home" aria-label="Gaurav Kumar home"><span class="brand-mark">G<span>K</span></span><span>gaurav<span class="brand-dot">.</span></span></a>
     <nav class="nav" id="nav">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Journey</a><a href="#projects">Projects</a><a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#journey">Journey</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
+      <a class="btn btn-small btn-outline" href="#contact">Let's talk <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i></i><i></i></button>
+    </div>
   </header>
 
   <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-grid"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
-      <div class="hero-content reveal">
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
         <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR INTERNSHIPS & OPPORTUNITIES</div>
-        <p class="hero-kicker">HELLO, I'M</p>
-        <h1>Gaurav<br><span class="gradient-text">Kumar<span class="hero-period">.</span></span></h1>
-        <div class="role-line"><span class="role-prefix">I'M A</span><span id="typedRole">Frontend Developer</span><span class="type-caret">|</span></div>
-        <p class="hero-copy">I turn ideas into thoughtful digital experiences — building responsive interfaces, exploring technology, and learning by creating.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a><a class="btn btn-ghost" href="#contact">Let's connect <span>↗</span></a></div>
-        <div class="hero-meta"><span>BASED IN UTTARAKHAND, INDIA</span><span class="meta-line"></span><span>SCROLL TO EXPLORE ↓</span></div>
+        <p class="hello">Hello, I'm</p>
+        <h1>Gaurav <span class="gradient-text">Kumar</span><span class="hero-spark">✳</span></h1>
+        <div class="role-line">I build <span id="typedRole">digital experiences</span><span class="typing-cursor">|</span></div>
+        <p class="hero-desc">A BCA student and aspiring developer passionate about creating clean, useful and engaging web experiences — from idea to implementation.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contact">Get in touch <span>↓</span></a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <span></span>
+          <a href="https://www.linkedin.com/in/gaurav-kumar-67710a382/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <span></span>
+          <a href="#about">Scroll to explore ↓</a>
+        </div>
       </div>
       <div class="hero-visual reveal">
-        <div class="visual-ring ring-a"></div><div class="visual-ring ring-b"></div>
-        <div class="visual-core"><div class="core-initials">G<span>K</span></div><div class="core-caption">DEVELOPER<br>IN PROGRESS</div></div>
-        <div class="floating-chip chip-top"><span class="chip-icon">✳</span> Creative development</div>
-        <div class="floating-chip chip-bottom"><span class="chip-dot"></span> Always learning. Always building.</div>
-        <div class="visual-index">01 / 06</div>
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-ring ring-one"></div><div class="visual-ring ring-two"></div>
+        <div class="hero-card">
+          <div class="card-top"><span class="window-dots"><i></i><i></i><i></i></span><span>developer.profile</span><span class="live-label">● LIVE</span></div>
+          <div class="avatar-wrap"><div class="avatar-halo"></div><div class="avatar">GK</div><span class="avatar-star">✦</span></div>
+          <h3>Gaurav Kumar</h3><p class="card-role">Frontend Developer · Learner</p>
+          <div class="code-lines"><p><b>const</b> passion = <em>"building"</em>;</p><p><b>const</b> mindset = <em>"keep learning"</em>;</p><p><b>const</b> goal = <em>"full-stack developer"</em>;</p></div>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span></div>
+        </div>
+        <div class="float-chip chip-code"><span>⌘</span> Clean code</div>
+        <div class="float-chip chip-design"><span>✧</span> Creative UI</div>
+        <div class="float-chip chip-location">⌖ Uttarakhand, India</div>
       </div>
       <a class="scroll-cue" href="#about"><span></span> SCROLL DOWN</a>
     </section>
 
-    <section class="about section-wrap section-pad" id="about">
-      <div class="section-heading reveal"><p class="eyebrow">01 — A LITTLE INTRODUCTION</p><h2>Curious mind.<br><span class="muted">Builder's mindset.</span></h2></div>
+    <section class="stats section reveal" aria-label="Highlights">
+      <div class="stat"><strong data-count="6">0</strong><span>Featured projects</span></div>
+      <div class="stat"><strong data-count="3">0</strong><span>Core focus areas</span></div>
+      <div class="stat"><strong data-count="1">0</strong><span>Hackathon award</span></div>
+      <div class="stat"><strong>∞</strong><span>Curiosity to learn</span></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal"><p class="section-kicker">01 / ABOUT ME</p><h2>Curious mind.<br><span class="gradient-text">Creative builder.</span></h2></div>
       <div class="about-layout">
-        <div class="about-stamp reveal"><div class="stamp-circle">GK · DEVELOPER · GK · DEVELOPER ·</div><div class="stamp-center">✳</div></div>
-        <div class="about-text reveal"><p class="lead">I'm Gaurav — a BCA student and aspiring <span class="highlight">Full Stack Developer</span> who enjoys turning concepts into useful, engaging web experiences.</p><p>My learning journey spans frontend development, programming fundamentals, databases, and collaborative projects. I like understanding how things work, experimenting with new ideas, and improving through hands-on building.</p><p>Beyond code, I enjoy exploring technology, creative ideas, and video editing. I'm focused on growing my skills and contributing to real-world products.</p><div class="about-facts"><div><strong>BCA</strong><span>UNDERGRADUATE</span></div><div><strong>06+</strong><span>PROJECT CONCEPTS / BUILDS</span></div><div><strong>2026</strong><span>HACKATHON — 3RD PLACE</span></div></div></div>
+        <div class="about-note reveal"><div class="note-icon">✳</div><p class="big-note">I turn ideas into <span>digital experiences</span> that are simple, useful and memorable.</p><div class="note-bottom"><span>BASED IN</span><b>Uttarakhand, India</b></div></div>
+        <div class="about-content reveal"><p class="lead">I'm Gaurav, a Bachelor of Computer Applications (BCA) student at Mind Power University, Bhimtal.</p><p>I enjoy exploring how the web works, building responsive interfaces and solving problems through code. I am strengthening my foundations in frontend development, programming and databases while working on practical projects.</p><p>My goal is to grow into a well-rounded full-stack developer and contribute to products that make a positive difference.</p>
+          <div class="about-facts"><div><span>EDUCATION</span><b>BCA · 3rd Semester</b></div><div><span>UNIVERSITY</span><b>Mind Power University</b></div><div><span>INTERESTS</span><b>Web · UI · Problem solving</b></div></div>
+          <a class="text-link" href="#journey">More about my journey <span>↗</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="skills section-wrap section-pad" id="skills">
-      <div class="section-heading reveal"><p class="eyebrow">02 — MY TOOLKIT</p><h2>Tools I use.<br><span class="muted">Skills I keep sharpening.</span></h2></div>
-      <div class="skill-groups">
-        <article class="skill-card reveal"><div class="skill-card-top"><span>01</span><span>⌘</span></div><h3>Frontend</h3><p>Creating responsive, accessible and engaging interfaces.</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span></div></article>
-        <article class="skill-card reveal"><div class="skill-card-top"><span>02</span><span>⌁</span></div><h3>Programming</h3><p>Building logic and strengthening problem-solving fundamentals.</p><div class="tags"><span>C</span><span>C++</span><span>Java</span><span>Python · Basic</span></div></article>
-        <article class="skill-card reveal"><div class="skill-card-top"><span>03</span><span>▤</span></div><h3>Backend & Data</h3><p>Learning how applications store, process and manage data.</p><div class="tags"><span>PHP</span><span>SQL</span><span>MySQL</span><span>DBMS</span></div></article>
-        <article class="skill-card reveal"><div class="skill-card-top"><span>04</span><span>⌘</span></div><h3>Tools & Concepts</h3><p>Working with development tools and core computer science concepts.</p><div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>XAMPP</span><span>DSA</span><span>OOP</span></div></article>
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal"><p class="section-kicker">02 / MY TOOLKIT</p><h2>Skills that bring<br><span class="gradient-text">ideas to life.</span></h2><p class="section-sub">A growing toolkit built through learning, practice and hands-on projects.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Frontend development</h3><p>Building responsive, accessible and interactive web interfaces.</p><div class="skill-pills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span></div><div class="skill-meter"><span style="--level:82%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">⌬</div><h3>Programming</h3><p>Learning programming fundamentals and problem-solving approaches.</p><div class="skill-pills"><span>C</span><span>C++</span><span>Java</span><span>Python basics</span></div><div class="skill-meter"><span style="--level:68%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">▤</div><h3>Database & backend</h3><p>Working with data, server-side basics and relational databases.</p><div class="skill-pills"><span>SQL</span><span>MySQL</span><span>PHP basics</span><span>DBMS</span></div><div class="skill-meter"><span style="--level:60%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">⎇</div><h3>Tools & workflow</h3><p>Using developer tools to build, debug and collaborate efficiently.</p><div class="skill-pills"><span>Git</span><span>GitHub</span><span>VS Code</span><span>XAMPP</span></div><div class="skill-meter"><span style="--level:72%"></span></div></article>
       </div>
+      <p class="skill-disclaimer">Skill bars are indicative self-assessments, not formal test scores.</p>
     </section>
 
-    <section class="journey section-wrap section-pad" id="experience">
-      <div class="section-heading reveal"><p class="eyebrow">03 — THE JOURNEY SO FAR</p><h2>Learning by doing.<br><span class="muted">Growing with every build.</span></h2></div>
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal"><p class="section-kicker">03 / SELECTED WORK</p><h2>Things I've <span class="gradient-text">built.</span></h2><p class="section-sub">A selection of learning projects, experiments and product ideas.</p></div>
+      <div class="project-toolbar reveal"><span>FEATURED PROJECTS <b>06</b></span><div class="filters" id="filters"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="web">Web</button><button class="filter" data-filter="idea">Concept</button></div></div>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal" data-category="web"><div class="project-art green-art"><div class="art-orbit"></div><div class="mini-dashboard"><span>GREEN TRAIL</span><strong>12.8 <small>kg CO₂ saved</small></strong><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="mini-leaf">♧</div></div><span class="art-label">01 / SUSTAINABILITY</span></div><div class="project-info"><div class="project-meta"><span>WEB APPLICATION</span><span>2026</span></div><h3>GreenTrail</h3><p>A sustainable living companion concept with daily eco challenges, rewards, streaks and carbon tracking.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span></div><a class="project-link" href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">Explore project <b>↗</b></a></div></article>
+        <article class="project-card reveal" data-category="web"><div class="project-art booking-art"><div class="booking-window"><div class="booking-top">STAY <i>● ● ●</i></div><div class="booking-image"></div><div class="booking-line"></div><div class="booking-line short"></div><div class="booking-button"></div></div><span class="art-label">02 / BOOKING SYSTEM</span></div><div class="project-info"><div class="project-meta"><span>FULL-STACK BASICS</span><span>2026</span></div><h3>Guest House Booking</h3><p>A booking workflow with form validation, PHP processing and MySQL database integration.</p><div class="project-tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div><a class="project-link" href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">Explore project <b>↗</b></a></div></article>
+        <article class="project-card reveal" data-category="idea"><div class="project-art phish-art"><div class="scan-card"><span>URL SECURITY SCAN</span><b>✓</b><strong>Risk analysis</strong><div class="scan-line"></div><div class="scan-line"></div><div class="scan-line"></div></div><span class="art-label">03 / CYBERSECURITY</span></div><div class="project-info"><div class="project-meta"><span>PROJECT CONCEPT</span><span>2026</span></div><h3>PhishLens</h3><p>An AI-assisted phishing detection concept to help users understand suspicious URLs and email risks.</p><div class="project-tags"><span>JavaScript</span><span>AI concept</span><span>Security</span></div><a class="project-link" href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">Explore project <b>↗</b></a></div></article>
+        <article class="project-card reveal" data-category="web"><div class="project-art guest-art"><div class="guest-screen"><span>GUEST HOUSE</span><div class="guest-photo"></div><b>Find your stay.</b><small>Comfort · Explore · Relax</small></div><span class="art-label">04 / WEBSITE CLONE</span></div><div class="project-info"><div class="project-meta"><span>FRONTEND WEBSITE</span><span>2026</span></div><h3>Kingsukh Guest House</h3><p>A multi-section guest-house website recreation built during a remote web development internship.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">Explore project <b>↗</b></a></div></article>
+        <article class="project-card reveal" data-category="idea"><div class="project-art waste-art"><div class="waste-circles"><i>♻</i><i>⌁</i><i>✿</i></div><div class="waste-title">SORT SMART<br><b>LIVE GREEN</b></div><span class="art-label">05 / ENVIRONMENT</span></div><div class="project-info"><div class="project-meta"><span>PROJECT CONCEPT</span><span>2026</span></div><h3>Garbage Identifier</h3><p>A concept for identifying waste categories and encouraging responsible disposal habits.</p><div class="project-tags"><span>Web</span><span>AI concept</span><span>Maps</span></div><a class="project-link" href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">Explore project <b>↗</b></a></div></article>
+        <article class="project-card reveal" data-category="web"><div class="project-art map-art"><div class="map-grid"><div class="map-pin">⌖</div><div class="map-popup">Explore the world <b>INR · USD · EUR</b></div></div><span class="art-label">06 / DATA EXPLORER</span></div><div class="project-info"><div class="project-meta"><span>WEB EXPERIMENT</span><span>2026</span></div><h3>World Explorer</h3><p>A country exploration interface concept combining country information, currencies and maps.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div><a class="project-link" href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">Explore project <b>↗</b></a></div></article>
+      </div>
+      <p class="project-footnote">Some entries are prototypes or concepts. Replace the GitHub profile links with individual repository URLs as projects are published.</p>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-heading reveal"><p class="section-kicker">04 / THE JOURNEY</p><h2>Learning by <span class="gradient-text">doing.</span></h2></div>
       <div class="timeline">
-        <article class="timeline-item reveal"><div class="timeline-date">APR 2026 · 1 MONTH</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-label">PROFESSIONAL EXPERIENCE</div><h3>Web Developer Intern <span>↗</span></h3><h4>InnoByte Services · Remote</h4><p>Worked on practical website development tasks, frontend layouts and responsive design. Built a Kingsukh Guest House website clone with Home, Rooms, Gallery and Contact pages, strengthening my HTML, CSS and JavaScript workflow.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span></div></div></article>
-        <article class="timeline-item reveal"><div class="timeline-date">2026 · HACKATHON</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-label">ACHIEVEMENT</div><h3>3rd Place — MindMesh Hackathon <span>✳</span></h3><h4>Team Elite · Mind Power University</h4><p>Collaborated with teammates, explored a problem statement and presented a technology-based solution. The experience strengthened teamwork, ideation and rapid prototyping skills.</p></div></article>
-        <article class="timeline-item reveal"><div class="timeline-date">2026 · IDEATHON</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-label">SELECTED PROJECT</div><h3>GreenTrail <span>↗</span></h3><h4>Sustainable Living Companion · Team of 2</h4><p>Selected to develop a companion that encourages sustainable habits through daily challenges, rewards, carbon tracking and progress visualization.</p><div class="tags"><span>JavaScript</span><span>Chart.js</span><span>Local Storage</span><span>UI Development</span></div></div></article>
-        <article class="timeline-item reveal"><div class="timeline-date">CURRENT</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-label">EDUCATION</div><h3>Bachelor of Computer Applications</h3><h4>Mind Power University · Bhimtal, Uttarakhand</h4><p>Currently pursuing BCA, building foundations in programming, data structures, databases, software engineering and web technologies.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2026 · PRESENT</div><div class="timeline-dot"></div><div class="timeline-body"><span class="timeline-type">EDUCATION</span><h3>Bachelor of Computer Applications</h3><p>Mind Power University, Bhimtal · BCA 3rd Semester</p><small>Building foundations in programming, databases, data structures and web technologies.</small></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2026</div><div class="timeline-dot"></div><div class="timeline-body"><span class="timeline-type">INTERNSHIP</span><h3>Web Developer Intern · InnoByte Services</h3><p>Remote · Project-based learning experience</p><small>Worked on a guest-house website recreation and practiced frontend implementation.</small></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2026</div><div class="timeline-dot"></div><div class="timeline-body"><span class="timeline-type">ACHIEVEMENT</span><h3>MindMesh Hackathon · 3rd Place</h3><p>Team Elite · Mind Power University</p><small>Collaborated with a team to develop and present a project idea.</small></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">ONGOING</div><div class="timeline-dot"></div><div class="timeline-body"><span class="timeline-type">GROWTH</span><h3>Full-stack development journey</h3><p>Learning through projects and consistent practice</p><small>Exploring frontend, backend, Git/GitHub and problem-solving step by step.</small></div></article>
       </div>
     </section>
 
-    <section class="projects section-wrap section-pad" id="projects">
-      <div class="section-heading reveal"><p class="eyebrow">04 — SELECTED BUILDS</p><h2>Ideas made<br><span class="muted">into experiences.</span></h2><p class="section-note">A selection of projects and concepts I've explored. Open the project cards to see the focus and technologies.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-feature reveal"><div class="project-art art-green"><div class="art-glow"></div><div class="green-leaf">✳</div><div class="art-label">LIVE SUSTAINABLY</div><div class="mini-dashboard"><span>YOUR IMPACT</span><b>↓ 2.4 kg</b><i></i><i></i><i></i></div></div><div class="project-info"><div class="project-number">01 / WEB APP</div><h3>GreenTrail <span>↗</span></h3><p>A sustainable living companion featuring daily eco-challenges, rewards, carbon tracking, streaks and data visualization.</p><div class="tags"><span>JavaScript</span><span>Chart.js</span><span>Local Storage</span></div></div></article>
-        <article class="project-card reveal"><div class="project-art art-cyber"><div class="cyber-orbit"></div><div class="shield">⌑</div><div class="art-label">LINK SAFETY CONCEPT</div><div class="risk-pill">URL RISK ANALYSIS</div></div><div class="project-info"><div class="project-number">02 / SECURITY</div><h3>AI Phishing Detection <span>↗</span></h3><p>A security-focused interface concept for reviewing suspicious URLs and communicating potential phishing risks.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
-        <article class="project-card reveal"><div class="project-art art-waste"><div class="waste-symbol">♻</div><div class="art-label">SMART WASTE CONCEPT</div><div class="scan-frame"></div></div><div class="project-info"><div class="project-number">03 / ENVIRONMENT</div><h3>Garbage Identifier <span>↗</span></h3><p>A waste identification concept exploring image-based classification and clear waste category feedback.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>ML concept</span></div></div></article>
-        <article class="project-card reveal"><div class="project-art art-booking"><div class="booking-window"><div class="window-dots">● ● ●</div><div class="booking-lines"><i></i><i></i><i></i></div><div class="booking-button">BOOK NOW</div></div><div class="art-label">BOOKING MANAGEMENT</div></div><div class="project-info"><div class="project-number">04 / FULL STACK</div><h3>Guest House Booking <span>↗</span></h3><p>A booking workflow with guest details, reservation confirmation and an admin dashboard for managing bookings.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div></div></article>
-        <article class="project-card reveal"><div class="project-art art-guest"><div class="guest-building"><span></span><span></span><span></span><span></span></div><div class="art-label">HOSPITALITY WEB DESIGN</div></div><div class="project-info"><div class="project-number">05 / WEBSITE</div><h3>Kingsukh Guest House <span>↗</span></h3><p>A responsive guest house website clone with Home, Rooms, Gallery and Contact sections, developed during internship work.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
-        <article class="project-card reveal"><div class="project-art art-map"><div class="map-grid"></div><div class="map-pin">⌖</div><div class="currency-card"><b>₹</b><span>COUNTRY<br>CURRENCY</span></div><div class="art-label">EXPLORE THE WORLD</div></div><div class="project-info"><div class="project-number">06 / EXPLORER</div><h3>Countries & Currency <span>↗</span></h3><p>An interactive exploration concept for country information, currency details and geographical locations.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Maps</span></div></div></article>
-      </div>
-      <p class="project-footnote">Project links and live demos can be added as repositories or deployments become available.</p>
-    </section>
-
-    <section class="education section-wrap section-pad" id="education">
-      <div class="section-heading reveal"><p class="eyebrow">05 — EDUCATION</p><h2>Building the<br><span class="muted">foundations.</span></h2></div>
-      <div class="education-grid">
-        <article class="education-card reveal"><span class="edu-year">CURRENT</span><div class="edu-icon">✳</div><h3>Bachelor of Computer Applications</h3><p>Mind Power University</p><small>Bhimtal, Uttarakhand · Pursuing</small></article>
-        <article class="education-card reveal"><span class="edu-year">CLASS XII</span><div class="edu-icon">◇</div><h3>Senior Secondary</h3><p>SSNG / SSSNG School</p><small>Biology Stream · 72% · Nainital</small></article>
-        <article class="education-card reveal"><span class="edu-year">CLASS X</span><div class="edu-icon">⌁</div><h3>Secondary Education</h3><p>SSNG / SSSNG School</p><small>Nainital, Uttarakhand</small></article>
-      </div>
-    </section>
-
-    <section class="contact section-wrap section-pad" id="contact">
-      <div class="contact-panel reveal"><div class="contact-orb"></div><p class="eyebrow">06 — HAVE A PROJECT IN MIND?</p><h2>Let's make<br><span class="gradient-text">it happen.</span></h2><p class="contact-copy">I'm interested in internships, entry-level opportunities, collaborations and meaningful projects. Let's connect.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:YOUR_EMAIL@example.com">Email me <span>↗</span></a><a class="btn btn-ghost" href="https://www.linkedin.com/in/gaurav-kumar-67710a382/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div><div class="contact-bottom"><span>HALDWANI, UTTARAKHAND, INDIA</span><span>OPEN TO OPPORTUNITIES</span></div></div>
+    <section class="section contact-section" id="contact">
+      <div class="contact-glow"></div><div class="contact-inner reveal"><p class="section-kicker">05 / LET'S CONNECT</p><h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2><p class="contact-copy">I'm open to internships, collaboration, project discussions and opportunities to learn.</p><a class="btn btn-primary contact-cta" href="mailto:YOUR_EMAIL@example.com">Say hello <span>↗</span></a><div class="contact-links"><a href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/gaurav-kumar-67710a382/" target="_blank" rel="noreferrer">LinkedIn ↗</a><button id="copyEmail" data-email="YOUR_EMAIL@example.com">Copy email ⧉</button></div><p class="copy-feedback" id="copyFeedback" aria-live="polite"></p></div>
     </section>
   </main>
-  <footer class="footer section-wrap"><a class="brand" href="#home">GK<span>.</span></a><p>Designed & built with curiosity by Gaurav Kumar.</p><div class="footer-links"><a href="https://github.com/0gauravkgamailcom-design" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/gaurav-kumar-67710a382/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="#top">BACK TO TOP ↑</a></div><small>© <span id="year"></span> GAURAV KUMAR</small></footer>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">G<span>K</span></span><span>gaurav<span class="brand-dot">.</span></span></a><p>Designed & built with curiosity by Gaurav Kumar.</p><a href="#home">Back to top ↑</a><span class="footer-year">© <span id="year"></span></span></footer>
   <script src="script.js"></script>
 </body>
 </html>
